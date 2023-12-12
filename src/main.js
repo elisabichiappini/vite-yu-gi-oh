@@ -1,6 +1,6 @@
 import { createApp } from 'vue';
 //FILE DI PARTENZA STILI PROGETTO
-import './style.scss';
+import './assets/styles/general.scss';
 //FILE DI PARTENZA VUE
 import App from './App.vue';
 

@@ -1,8 +1,19 @@
 <script>
+import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
+export default {
+    name: 'AppYuGiOh',
+    components: {
+        AppHeader,
+        AppMain,
+    }
+}
 </script>
 
 <template>
+    <AppHeader></AppHeader>
+    <AppMain></AppMain>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 </style>
