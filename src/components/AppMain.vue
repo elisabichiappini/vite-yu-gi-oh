@@ -2,6 +2,7 @@ x<script>
 import AppFoundResults from './AppFoundResults.vue';
 import AppCardsList from './AppCardsList.vue';
 import AppCard from './AppCard.vue';
+
 export default {
     name: 'Main',
     components : {

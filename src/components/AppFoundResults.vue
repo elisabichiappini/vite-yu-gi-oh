@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    found results
+    <div>TROVATI 20 CARDS</div>
 </template>
 
 <style scoped>
