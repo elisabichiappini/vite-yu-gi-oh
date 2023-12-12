@@ -2,3 +2,8 @@
 GENERAL
 -----------------------------------------------------*/
 
+@use './partials/mixin' as *;
+@use './partials/reset' as *;
+@use './partials/typography' as *;
+@use './partials/utilities' as *;
+@use './partials/variables' as *;
