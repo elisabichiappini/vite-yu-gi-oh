@@ -1,11 +1,12 @@
 <script>
 export default {
     name: 'FoundResults',
+    props: ['found'],
 }
 </script>
 
 <template>
-    <div>TROVATI 20 CARDS</div>
+    <div>TROVATI {{ found }} CARDS</div>
 </template>
 
 <style scoped>
