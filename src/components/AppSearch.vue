@@ -7,11 +7,6 @@ export default {
             store,
         }
     },
-    // methods: {
-    //     testEvent() {
-    //         console.log('ciao sono stato richiamata');
-    //     }
-    // }
 };
 </script>
 
