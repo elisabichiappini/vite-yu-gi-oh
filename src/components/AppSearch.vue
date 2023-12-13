@@ -1,14 +1,25 @@
 <script>
+import { store } from '../store';
 export default {
     name: 'Search',
+    data () {
+        return {
+            store,
+        }
+    },
+    // methods: {
+    //     testEvent() {
+    //         console.log('ciao sono stato richiamata');
+    //     }
+    // }
 };
 </script>
 
 <template>
 <div class="container">
     <label for="filter"></label>
-    <select id="filter" class="content-filter">
-        <option selected>Filter</option>
+    <select id="filter" class="content-filter" name="archetype" v-model="store.searchValueType" @keyup.enter="$emit('search')">
+        <option selected value="">Filtra archetype</option>
         <option value="Alien">Alien</option>
         <option value="Gold">Gold</option>
     </select>

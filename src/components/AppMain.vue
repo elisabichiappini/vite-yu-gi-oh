@@ -17,8 +17,12 @@ export default {
     data() {
         return {
             store,
-            cards: [],
-            apiUrl: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0',
+        }
+    },
+    methods: {
+        searchCards (){
+            console.log('ho emesso un evento');
+            console.log(this.store.searchValueType);
         }
     },
     created() {
@@ -31,7 +35,7 @@ export default {
 
 <template>
 <main>
-    <AppSearch></AppSearch>
+    <AppSearch @search="searchCards"></AppSearch>
     <div class="container container-main">
         <AppFoundResults :found="store.cards.length"></AppFoundResults>
         <AppCardsList>
