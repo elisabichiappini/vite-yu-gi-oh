@@ -9,7 +9,10 @@ export default {
 <template>
     <div>
         <div>
-            <img :src="image" alt="name">
+            <img 
+            class="img-content"
+            :src="image" 
+            :alt="name">
         </div>
         <h4>{{ name }}</h4>
         <h5>{{ archetype }}</h5>

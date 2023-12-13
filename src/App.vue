@@ -15,5 +15,10 @@ export default {
     <AppMain></AppMain>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
 </style>

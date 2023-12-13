@@ -28,11 +28,22 @@ export default {
 </script>
 
 <template>
-    <AppFoundResults :found="store.cards.length"></AppFoundResults>
-    <AppCardsList :cards="store.cards">
-        <AppCard></AppCard>
-    </AppCardsList>
+    <main>
+        <div class="container">
+            <AppFoundResults :found="store.cards.length"></AppFoundResults>
+            <AppCardsList :cards="store.cards">
+                <AppCard></AppCard>
+            </AppCardsList>
+        </div>
+    </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../assets/styles/partials/variables' as *;
+
+
+main {
+    background-color:$bg-color-primary;
+    
+}
 </style>
