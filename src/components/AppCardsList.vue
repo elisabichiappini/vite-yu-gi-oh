@@ -28,9 +28,9 @@ export default {
 @use '../assets/styles/partials/variables' as *;
 .cards-list {
     background-color: $white;
-    padding: 50px;
     .card {
         width: calc((100% - 40px)/ 5);
+        background-color: $bg-color-primary;
     }
 }
 </style>

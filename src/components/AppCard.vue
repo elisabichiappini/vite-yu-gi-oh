@@ -7,17 +7,26 @@ export default {
 </script>
 
 <template>
-    <div>
-        <div>
+    <div class="content-card d-flex flex-column justify-between">
+        <div class="box-img">
             <img 
             class="img-content"
             :src="image" 
             :alt="name">
         </div>
-        <h4>{{ name }}</h4>
-        <h5>{{ archetype }}</h5>
+        <h4 class="text-center">{{ name }}</h4>
+        <h5 class="text-center">{{ archetype }}</h5>
     </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../assets/styles/partials/variables' as *;
+.content-card {
+    height: 400px;
+
+    h4 {
+        color: $white;
+        text-transform: uppercase;
+    }
+}
 </style>

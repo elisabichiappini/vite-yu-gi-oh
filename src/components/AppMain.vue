@@ -4,6 +4,7 @@ import AppFoundResults from './AppFoundResults.vue';
 import AppCardsList from './AppCardsList.vue';
 import AppCard from './AppCard.vue';
 import { store } from '../store';
+import AppSearch from './AppSearch.vue';
 
 export default {
     name: 'Main',
@@ -11,6 +12,7 @@ export default {
         AppFoundResults,
         AppCardsList,
         AppCard,
+        AppSearch,
     },
     data() {
         return {
@@ -29,21 +31,28 @@ export default {
 
 <template>
     <main>
-        <div class="container">
-            <AppFoundResults :found="store.cards.length"></AppFoundResults>
-            <AppCardsList :cards="store.cards">
-                <AppCard></AppCard>
-            </AppCardsList>
+        <AppSearch></AppSearch>
+        <div class="container container-main">
+                <AppFoundResults :found="store.cards.length"></AppFoundResults>
+                <AppCardsList :cards="store.cards">
+                    <AppCard></AppCard>
+                </AppCardsList>
         </div>
     </main>
 </template>
 
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
-
+@use '../assets/styles/partials/mixin' as *;
 
 main {
-    background-color:$bg-color-primary;
-    
+    background-color: $bg-color-primary;
+    .container-main {
+
+        background-color: $white;
+        padding: 50px;
+    }
+
 }
+    
 </style>

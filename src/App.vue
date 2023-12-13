@@ -16,9 +16,9 @@ export default {
 </template>
 
 <style lang="scss">
+@use './assets/styles/partials/mixin' as *;
 
 .container {
-    max-width: 1140px;
-    margin: 0 auto;
+    @include my-container;
 }
 </style>

@@ -7,7 +7,7 @@ export default {
 <template>
     <header id="intestation" class="d-flex">
         <div>image</div>
-        <div>title</div>
+        <h1>Yu-Gi-Oh API</h1>
     </header>
 </template>
 
