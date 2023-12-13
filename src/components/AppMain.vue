@@ -20,22 +20,30 @@ export default {
         }
     },
     methods: {
-        searchCards (){
-            console.log('ho emesso un evento');
+        search (){
             console.log(this.store.searchValueType);
-        }
-    },
-    created() {
-        axios.get(store.apiUrl).then((data) => {
+            axios
+                .get(this.store.apiUrl,
+                {
+                    params: {
+                        archetype: this.store.searchValueType,
+                    },
+                }
+            )
+            .then((data) => {
             store.cards = data.data.data;
         });
+    }
+},
+    created() {
+        this.search();
     },
 };
 </script>
 
 <template>
 <main>
-    <AppSearch @search="searchCards"></AppSearch>
+    <AppSearch @search="search"></AppSearch>
     <div class="container container-main">
         <AppFoundResults :found="store.cards.length"></AppFoundResults>
         <AppCardsList>
