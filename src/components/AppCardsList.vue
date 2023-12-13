@@ -14,14 +14,14 @@ export default {
 </script>
 
 <template>
-    <div class="cards-list d-flex flex-wrap g-10">
-        <AppCard 
-            class="card"
-            v-for="card in cards" 
-            :image="card.card_images[0].image_url"
-            :name="card.name"
-            :archetype="card.archetype"></AppCard>
-    </div>
+<div class="cards-list d-flex flex-wrap g-10">
+    <AppCard 
+        class="card"
+        v-for="card in cards" 
+        :image="card.card_images[0].image_url"
+        :name="card.name"
+        :archetype="card.archetype"></AppCard>
+</div>
 </template>
 
 <style lang="scss" scoped>

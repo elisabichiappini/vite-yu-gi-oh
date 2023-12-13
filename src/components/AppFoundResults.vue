@@ -6,7 +6,9 @@ export default {
 </script>
 
 <template>
-    <div class="result-content">Found {{ found }} cards</div>
+<div class="result-content">
+    Found {{ found }} cards
+</div>
 </template>
 
 <style lang="scss" scoped>

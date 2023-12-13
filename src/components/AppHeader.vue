@@ -1,7 +1,7 @@
 <script>
 export default {
     name: 'Header',
-}
+};
 </script>
 
 <template>
@@ -20,5 +20,4 @@ export default {
     display: flex;
     gap: 10px
 }
-
 </style>

@@ -2,8 +2,7 @@
 export default {
     name: 'Card',
     props: ['name', 'image', 'archetype'],
-
-}
+};
 </script>
 
 <template>

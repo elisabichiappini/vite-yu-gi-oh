@@ -30,15 +30,15 @@ export default {
 </script>
 
 <template>
-    <main>
-        <AppSearch></AppSearch>
-        <div class="container container-main">
-                <AppFoundResults :found="store.cards.length"></AppFoundResults>
-                <AppCardsList :cards="store.cards">
-                    <AppCard></AppCard>
-                </AppCardsList>
-        </div>
-    </main>
+<main>
+    <AppSearch></AppSearch>
+    <div class="container container-main">
+        <AppFoundResults :found="store.cards.length"></AppFoundResults>
+        <AppCardsList :cards="store.cards">
+            <AppCard></AppCard>
+        </AppCardsList>
+    </div>
+</main>
 </template>
 
 <style lang="scss" scoped>
@@ -52,7 +52,5 @@ main {
         background-color: $white;
         padding: 50px;
     }
-
 }
-    
 </style>
