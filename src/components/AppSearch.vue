@@ -1,4 +1,5 @@
 <script>
+import axios from 'axios';
 import { store } from '../store';
 export default {
     name: 'Search',
@@ -7,16 +8,25 @@ export default {
             store,
         }
     },
+    created() {
+        axios.get(store.apiArchetypeUrl).then((data) => {
+            store.archetypes = data.data;
+        });
+    }
 };
 </script>
 
 <template>
 <div class="container">
     <label for="filter"></label>
-    <select id="filter" class="content-filter" name="archetype" v-model="store.searchValueType" @keyup.enter="$emit('search')">
-        <option selected value="">Filtra archetype</option>
-        <option value="Alien">Alien</option>
-        <option value="Gold">Gold</option>
+    <select 
+        id="filter" 
+        class="content-filter" 
+        name="archetype" 
+        v-model="store.searchValueType" 
+        @keyup.enter="$emit('search')">
+        <option selected value="">Filtra archetype...</option>
+        <option v-for="archetype in store.archetypes" :value="archetype.archetype_name">{{ archetype.archetype_name }}</option>
     </select>
 </div>
 </template>
