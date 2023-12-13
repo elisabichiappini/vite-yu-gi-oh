@@ -1,13 +1,14 @@
 <script>
+import { store } from '../store';
 import AppCard from './AppCard.vue';
 export default {
     name: 'CardsList',
     components: {
         AppCard,
     },
-    props: ['cards'],
     data() {
         return {
+            store,
         };
     },
 };
@@ -17,7 +18,7 @@ export default {
 <div class="cards-list d-flex flex-wrap g-10">
     <AppCard 
         class="card"
-        v-for="card in cards" 
+        v-for="card in store.cards" 
         :image="card.card_images[0].image_url"
         :name="card.name"
         :archetype="card.archetype"></AppCard>

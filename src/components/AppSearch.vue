@@ -6,7 +6,9 @@ export default {
 
 <template>
 <div class="container">
+    <label for="filter"></label>
     <select id="filter" class="content-filter">
+        <option selected>Filter</option>
         <option value="Alien">Alien</option>
         <option value="Gold">Gold</option>
     </select>

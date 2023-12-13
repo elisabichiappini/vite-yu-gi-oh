@@ -34,7 +34,7 @@ export default {
     <AppSearch></AppSearch>
     <div class="container container-main">
         <AppFoundResults :found="store.cards.length"></AppFoundResults>
-        <AppCardsList :cards="store.cards">
+        <AppCardsList>
             <AppCard></AppCard>
         </AppCardsList>
     </div>
