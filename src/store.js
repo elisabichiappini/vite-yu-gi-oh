@@ -5,7 +5,7 @@ export const store = reactive ({
     searchValueType: '',
     loading: true,
     cards: [],
-    apiUrl: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0',
+    apiUrl: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=1000&offset=0&archetype=',
     archetypes: [],
     apiArchetypeUrl: 'https://db.ygoprodeck.com/api/v7/archetypes.php',
 });
