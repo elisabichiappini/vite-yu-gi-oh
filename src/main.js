@@ -1,7 +1,7 @@
 import { createApp } from 'vue';
-//FILE DI PARTENZA STILI PROGETTO
+//File di partenza foglio di stile
 import './assets/styles/general.scss';
-//FILE DI PARTENZA VUE
+//File di partenza progetto Vuejs
 import App from './App.vue';
 
 createApp(App).mount('#app');

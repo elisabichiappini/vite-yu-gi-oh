@@ -1,6 +1,8 @@
 <script>
+//importazioni dei componenti
 import { store } from '../store';
 import AppCard from './AppCard.vue';
+//rendo esportabile il file.vue: identifico con un nome, eventuali componenti registrati, data, methods e relativi cicli di vita
 export default {
     name: 'CardsList',
     components: {

@@ -1,4 +1,5 @@
 <script>
+//rendo esportabile il file.vue: identifico con un nome, eventuali componenti registrati, data, methods e relativi cicli di vita
 export default {
     name: 'FoundResults',
     props: ['found'],

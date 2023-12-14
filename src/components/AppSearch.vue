@@ -1,6 +1,8 @@
 <script>
+//importazione axios pacchetto e state management
 import axios from 'axios';
 import { store } from '../store';
+//rendo esportabile il file.vue: identifico con un nome, eventuali componenti registrati, data, methods e relativi cicli di vita
 export default {
     name: 'Search',
     data () {

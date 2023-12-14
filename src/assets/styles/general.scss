@@ -1,7 +1,7 @@
 /*-----------------------------------------------------
 GENERAL
 -----------------------------------------------------*/
-
+//Associati i partials al file generale del css in versione scss
 @use './partials/mixin' as *;
 @use './partials/reset' as *;
 @use './partials/typography' as *;

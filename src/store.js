@@ -1,5 +1,7 @@
-import {reactive} from "vue";
+//Importiamo il metodo reattivo per rendere l'oggetto a sua volta reattivo
+import { reactive } from "vue";
 
+//Creazione del manifesto store per mostrare a tutte le informazioni
 export const store = reactive ({
     searchText: "",
     searchValueType: '',

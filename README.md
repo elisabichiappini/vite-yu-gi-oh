@@ -1,5 +1,6 @@
 # Vite Yu-Gi-Oh
 
+### ***Milestone 1***
 #### Descrizione:
 - Rappresentazione progetto YU-GI-OH API con Vite e Vue 3, definire i componenti necessari per strutturare il layout come da screenshot allegato.
 ![screen](src/assets/screen.png)
@@ -15,5 +16,16 @@ e con i dati restituiti, stampate una card per ogni carta.
 
 #### Bonus:
 - Creare un componente loader da visualizzare fintantoché i risultati non sono pronti.
+---
+### ***Milestone 2***
+#### Descrizione:
+- Nella stessa repo, aggiungere una select per filtrare i risultati in base all’archetipo.
+Le option della select devono essere popolate dinamicamente chiamando questo endpoint dell'api [click me]('https://db.ygoprodeck.com/api/v7/archetypes.php'): quando l'utente seleziona un valore dalla lista, viene effettuata una chiamata alle API con l'archetipo selezionato
 
-✨ 12_12_2023
+#### Bonus:
+- Creare un componente che mostri il numero totale di risultati ottenuti.
+
+*Nota:
+Per capire come comunicare alle API le carte dell'archetipo che volete, è necessario fare riferimento alla documentazione che trovate qui:* [click me]('https://ygoprodeck.com/api-guide/').
+
+✨ 12_12_2023 & 13_12_2023

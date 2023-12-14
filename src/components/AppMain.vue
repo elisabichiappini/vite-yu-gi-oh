@@ -1,11 +1,12 @@
 x<script>
+//importazioni dei componenti, axios pacchetto e state management
 import axios from 'axios';
 import AppFoundResults from './AppFoundResults.vue';
 import AppCardsList from './AppCardsList.vue';
 import AppCard from './AppCard.vue';
 import { store } from '../store';
 import AppSearch from './AppSearch.vue';
-
+//rendo esportabile il file.vue: identifico con un nome, eventuali componenti registrati, data, methods e relativi cicli di vita
 export default {
     name: 'Main',
     components : {
